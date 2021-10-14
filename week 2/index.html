@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+          background-color: rgb(238, 221, 203);
+      }
+        .pic{
+            width: 200px;
+            height:120px;
+            border:5px solid black;
+            margin: 10px;
+            padding: 6px;
+        }
+        #logo{
+            
+            width: 80px;
+            height:100px;
+            position: relative;
+           float: left; 
+        }
+        table th{
+            text-align: left;
+            background-color: aquamarine;
+            font-size:20px;
+        }
+        table td{
+            border: 1px solid black;
+            padding: 6px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        h3{
+            color: darkcyan;
+        }
+        h1{
+            font-family: cursive;
+            color: mediumturquoise;
+        }
+        h2{
+            font-family: cursive;
+            color: rgb(69, 190, 186); 
+        }
+        .shora{
+            display:inline-block;    
+        }
+        div{
+            position: absolute;
+            right: 150px;
+        }
+      ul{
+         position:fixed;
+          }
+     video{
+        width: 200px;
+            height:120px;
+            border:2px double red;
+            margin: 10px;
+            padding: 10px;
+
+     }
+   
+     input, label, select{
+        margin:20px 0px;
+     }
+     .check{
+        margin-top: 5px;
+         margin-bottom: 20px;
+        margin-right: 6px;
+     }
+    form p{
+         margin-top: 10px;
+         margin-bottom: 0px;
+     }
+     form{
+         border: 15px blueviolet dotted;
+         padding: 10px;
+         margin: 10px;
+         width:300px;
+     }
+     #labbel{
+         display: block;
+         margin-bottom: 0px;
+     }
+     textarea{
+         margin-top: 5px;
+     }
+    </style>
+</head>
+<body>
+   
+        <h1 class="shora">FSWD </h1>
+        <img id="logo" src="images/לוגו סמינר copy.jpg" alt="bnot eli7" class="shora" >
+        <h2>Training Course</h2>
+        
+   
+   <ul>
+       <li><a href="#ddd">description</a></li>
+       <li><a href="#ppp">participants</a></li>
+       <li><a href="#iii">impression</a></li> 
+   </ul>
+   <div class="kishur">
+    <h3 id="ddd">Course description</h3>
+    <P>This course is spread over 30 weeks in which we will study 7 chapters on various topics.<br> Each week there are 10 lessons, and after 4 weeks at the end of the chapter, projects will be submitted.<br> This course provides a certificate in web development</P>
+    <h3 id="ppp">Course participants</h3>
+    <table>
+       <thead>
+           <tr>
+               <th>names</th>
+               <th>phones</th>
+               <th>emails</th>
+               <th>Congratulations</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>miri kohen</td>
+               <td>0504144235</td>
+               <td>76869@gmail.com</td>
+               <td><audio src="./audios/song.wav" controls></audio></td>
+           </tr>
+           <tr>
+            <td>lali kahana</td>
+            <td>0544155266</td>
+            <td>lali@gmail.com</td>
+            <td><audio src="./audios/gitar.wav" controls></audio></td>
+        </tr>
+        <tr>
+            <td>rachel levi</td>
+            <td>0597864557</td>
+            <td>r55555559@gmail.com</td>
+            <td><audio src="./audios/dance.wav" controls></audio></td>
+        </tr>
+        <tr>
+            <td>naama kaz</td>
+            <td>0555678905</td>
+            <td>naama4@gmail.com</td>
+            <td><audio src="./audios/coins.wav" controls></audio></td>
+        </tr>
+        <tr>
+            <td>pnina kaz</td>
+            <td>0556677889</td>
+            <td>pini88@gmail.com</td>
+            <td><audio src="./audios/drums.wav" controls></audio></td>
+        </tr>
+       </tbody>
+     </table>
+   <h3 id="iii">Impressions from the course</h3>
+      <img src="images/j0178420.jpg" alt="a girl who learn 1" class="pic">
+      <img src="images/j0178426.jpg" alt="a girl who learn 2" class="pic">
+      <img src="images/j0178432.jpg" alt="a girl who learn 3" class="pic">
+      <video src="vidioes/Day 17_ Introduction to Forms (30 Days to Learn HTML & CSS).mp4" controls></video>
+      <video src="vidioes/HTML Tutorial for Beginners - 25 - Title and alt attributes.mp4" controls></video>
+     
+   <br>
+   <a href="www.codecademy.com/courses/learn-html/lessons/html-tables/exercises/why-tables">learn tables in html</a>
+   <br>
+   <a href="www.codecademy.com/courses/learn-html/lessons/intro-to-html/exercises/intro">elements and Structure in html</a>
+   <br>
+   <a href=" www.codecademy.com/courses/learn-css/lessons/learn-css-selectors/exercises/type">Syntax and Selectors in css</a>
+   <form action="index.html" method="POST">
+      
+       <input type="text" id="username">
+       <label for="username">enter yuor name</label>
+       <br>
+       <input type="number" id="age" max="120" min="5">
+       <label for="age">enter your age</label>
+       <br>
+       <input type="radio" id="male" name="male">
+       <label for="male">male</label>
+       <input type="radio" id="female" name="female">
+       <label for="female">female</label>
+       <br>
+       <label id="labbel">?What language do you like to learn</label>
+       <input type="checkbox" class="check" id="loveCss" name="loveCss">
+       <label for="loveCss">I love Css</label>
+       <input type="checkbox" class="check" id="loveHtml" name="loveHtml">
+       <label for="loveHtml">I love Html</label>
+       <input type="checkbox" class="check" id="loveJS" name="loveJS">
+       <label for="loveJS">I love JS</label>
+       <br>
+       <select name="cities" id="cities">
+           <option value="Jerusalem">Jerusalem</option>
+           <option value="BneyBrak">BneyBrak</option>
+           <option value="Elad">Elad</option>
+           <option value="Chifa">Chifa</option>
+       </select>
+       <label for="cities">?where are your living</label>
+       <br>
+       <label for="Remarks">Remarks</label>
+       <br>
+       <textarea name="Remarks"  cols="30" rows="10" value="Remarks"></textarea>
+       <br>
+
+   </form>
+</div>
+   
+</body>
+</html>
